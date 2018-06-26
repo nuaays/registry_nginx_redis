@@ -10,9 +10,8 @@ nginx:
      - ./nginx/registry.conf:/etc/nginx/conf.d/registry.conf:ro
    restart: always
 
-
 registry_auth:
-   image: registry:2.5.0
+   image: registry:2.6.2
    restart: always
    ports:
      - 127.0.0.1:5001:5000
